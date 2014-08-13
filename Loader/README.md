@@ -20,16 +20,16 @@ How to use?
 
 In your index.php you have to setup constants and loader itself
 
-defined('CLASSMAP_COMPILATION') || define('CLASSMAP_COMPILATION', (getenv('CLASSMAP_COMPILATION') ? getenv('CLASSMAP_COMPILATION') : false));
-defined('SCRIPT_COMPILATION') || define('SCRIPT_COMPILATION', (getenv('SCRIPT_COMPILATION') ? getenv('SCRIPT_COMPILATION') : false));
+``defined('CLASSMAP_COMPILATION') || define('CLASSMAP_COMPILATION', (getenv('CLASSMAP_COMPILATION') ? getenv('CLASSMAP_COMPILATION') : false));``
+``defined('SCRIPT_COMPILATION') || define('SCRIPT_COMPILATION', (getenv('SCRIPT_COMPILATION') ? getenv('SCRIPT_COMPILATION') : false));``
 
-require_once 'Vario/Loader.php';
-Vario_Loader::initLoader();
+``require_once 'Vario/Loader.php';``
+``Vario_Loader::initLoader();``
 
 Optionally you can also setup .htaccess:
 
-SetEnv CLASSMAP_COMPILATION false
-SetEnv SCRIPT_COMPILATION false
+`SetEnv CLASSMAP_COMPILATION false`
+`SetEnv SCRIPT_COMPILATION false`
 
 How to remove "require_once" from Zend Framework libraries
 --------------
